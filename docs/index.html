@@ -49,131 +49,420 @@
                                 <div class="card-heading"></div>
                                   <div class="card-body">
                                       <h2 class="title">COVID Initial Assessment Chart</h2>
-	                                     <form id="myForm">
-                                        <div class="input-group">
-                                            <input class="input--style-1" type="text" placeholder="NAME" name="Name">
+	                                    <form id="myForm">
+                                            <div class="input-group">
+                                                <input class="input--style-1" type="text" placeholder="Name of Patient" name="Name">
+                                            </div>
+                                            <div class="input-group">
+                                                <input class="input--style-1" type="text" placeholder="MRD" name="MRD">
+                                            </div>
+                                            <div class="input-group">
+                                            <input class="input--style-1" type="text" placeholder="Age" name="Age">
+                                            </div>
+                                            <div class="input-group">
+                                                <div class="rs-select2 js-select-simple select--no-search">
+                                                    <select name="gender">
+                                                        <option disabled="disabled" selected="selected">Gender</option>
+                                                        <option>Male</option>
+                                                        <option>Female</option>
+                                                        <option>Prefer Not to Say</option>
+                                                        <option>Other</option>
+                                                    </select>
+                                                    <div class="select-dropdown"></div>
+                                                </div>
                                         </div>
-                                        <div class="input-group">
-                                            <input class="input--style-1" type="text" placeholder="MRD" name="MRD">
-                                        </div>
-                                        <div class="input-group">
-                                          <input class="input--style-1" type="text" placeholder="Age" name="Age">
-                                        </div>
-                                        <div class="input-group">
-                                             <div class="rs-select2 js-select-simple select--no-search">
-                                                   <select name="gender">
-                                                       <option disabled="disabled" selected="selected">Gender</option>
-                                                       <option>Male</option>
-                                                       <option>Female</option>
-                                                       <option>Prefer Not to Say</option>
-                                                       <option>Other</option>
-                                                   </select>
-                                                   <div class="select-dropdown"></div>
-                                              </div>
-                                      </div>
-                                        <div class="input-group">
-                                          <input class="input--style-1" type="text" placeholder="Occupation" name="Occupation">
-                                        </div>
-                                        <div class="input-group">
-                                           <div class="rs-select2 js-select-simple select--no-search">
-                                               <select name="covidtestype">
-                                                   <option disabled="disabled" selected="selected">Type of Covid Test Done</option>
-                                                   <option>RT-PCR</option>
-                                                   <option>Antigen</option>
-                                                   <option>Genexpert</option>
-                                                   <option>True NAT</option>
+                                            <div class="input-group">
+                                            <input class="input--style-1" type="text" placeholder="Occupation" name="Occupation">
+                                            </div>
+                                            <div class="input-group">
+                                            <div class="rs-select2 js-select-simple select--no-search">
+                                                <select name="covidtestype">
+                                                    <option disabled="disabled" selected="selected">Type of Covid Test Done</option>
+                                                    <option>RT-PCR</option>
+                                                    <option>Antigen</option>
+                                                    <option>Genexpert</option>
+                                                    <option>True NAT</option>
 
-                                               </select>
-                                               <div class="select-dropdown"></div>
-                                           </div>
-                                       </div>
-                                        <div class="input-group">
-                                          <input class="input--style-1 js-datepicker" type="text" placeholder="Date of COVID test" name="Date of Covid Test">
-                                          <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
+                                                </select>
+                                                <div class="select-dropdown"></div>
+                                            </div>
                                         </div>
-                                        <div class="input-group">
-                                          <input class="input--style-1 js-datepicker" type="text" placeholder="Scheduled Date of Repeat Covid Test" name="Scheduled Date of Repeat Covid Test">
-                                          <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
-                                        </div>
-                                        <div class="row row-space">
-                         <div class="col-2">
-                             <div class="input-group">
-                                 <div class="rs-select2 js-select-simple select--no-search">
-                                     <select name="Drug Allergies">
-                                         <option disabled="disabled" selected="selected">Drug Allergies</option>
-                                         <option>Yes</option>
-                                         <option>No</option>
-                                     </select>
-                                     <div class="select-dropdown"></div>
-                                 </div>
-                             </div>
-                         </div>
-                         <div class="col-2">
-                             <div class="input-group">
-                                 <div class="rs-select2 js-select-simple select--no-search">
-                                     <select name="Recent travel within last two weeks">
-                                         <option disabled="disabled" selected="selected">Recent travel within last two weeks</option>
-                                         <option>Yes</option>
-                                         <option>No</option>
-                                     </select>
-                                     <div class="select-dropdown"></div>
-                                 </div>
-                             </div>
-                         </div>
-                         <div class="col-2">
-                             <div class="input-group">
-                                 <div class="rs-select2 js-select-simple select--no-search">
-                                     <select name="Contact with COVID confirmed/suspected individual">
-                                         <option disabled="disabled" selected="selected">Contact with COVID confirmed/suspected individual</option>
-                                         <option>Yes</option>
-                                         <option>No</option>
-                                     </select>
-                                     <div class="select-dropdown"></div>
-                                 </div>
-                             </div>
-                         </div>
-                         <div class="col-2">
-                             <div class="input-group">
-                                 <div class="rs-select2 js-select-simple select--no-search">
-                                     <select name="Co-Morbidities">
-                                         <option disabled="disabled" selected="selected">Co-Morbidities</option>
-                                         <option>Yes</option>
-                                         <option>No</option>
-                                     </select>
-                                     <div class="select-dropdown"></div>
-                                 </div>
-                             </div>
-                         </div>
-                         <div class="col-2">
-                             <div class="input-group">
-                                 <div class="rs-select2 js-select-simple select--no-search">
-                                     <select name="Smoking">
-                                         <option disabled="disabled" selected="selected">Smoking</option>
-                                         <option>Yes</option>
-                                         <option>No</option>
-                                     </select>
-                                     <div class="select-dropdown"></div>
-                                 </div>
-                             </div>
-                         </div>
-                         <div class="col-2">
-                             <div class="input-group">
-                                 <div class="rs-select2 js-select-simple select--no-search">
-                                     <select name="Alcohol consumption">
-                                         <option disabled="disabled" selected="selected">Alcohol consumption</option>
-                                         <option>Yes</option>
-                                         <option>No</option>
-                                     </select>
-                                     <div class="select-dropdown"></div>
-                                 </div>
-                             </div>
-                         </div>
+                                            <div class="input-group">
+                                            <input class="input--style-1 js-datepicker" type="text" placeholder="Date of COVID test" name="Date of Covid Test">
+                                            <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
+                                            </div>
+                                            <div class="input-group">
+                                            <input class="input--style-1 js-datepicker" type="text" placeholder="Scheduled Date of Repeat Covid Test" name="Scheduled Date of Repeat Covid Test">
+                                            <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
+                                            </div>
+                                            <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <div class="rs-select2 js-select-simple select--no-search">
+                                        <select name="Drug Allergies">
+                                            <option disabled="disabled" selected="selected">Drug Allergies</option>
+                                            <option>Yes</option>
+                                            <option>No</option>
+                                        </select>
+                                        <div class="select-dropdown"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <div class="rs-select2 js-select-simple select--no-search">
+                                        <select name="Recent travel within last two weeks">
+                                            <option disabled="disabled" selected="selected">Recent travel within last two weeks</option>
+                                            <option>Yes</option>
+                                            <option>No</option>
+                                        </select>
+                                        <div class="select-dropdown"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <div class="rs-select2 js-select-simple select--no-search">
+                                        <select name="Contact with COVID confirmed/suspected individual">
+                                            <option disabled="disabled" selected="selected">Contact with COVID confirmed/suspected individual</option>
+                                            <option>Yes</option>
+                                            <option>No</option>
+                                        </select>
+                                        <div class="select-dropdown"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <div class="rs-select2 js-select-simple select--no-search">
+                                        <select name="Co-Morbidities">
+                                            <option disabled="disabled" selected="selected">Co-Morbidities</option>
+                                            <option>Yes</option>
+                                            <option>No</option>
+                                        </select>
+                                        <div class="select-dropdown"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <div class="rs-select2 js-select-simple select--no-search">
+                                        <select name="Smoking">
+                                            <option disabled="disabled" selected="selected">Smoking</option>
+                                            <option>Yes</option>
+                                            <option>No</option>
+                                        </select>
+                                        <div class="select-dropdown"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <div class="rs-select2 js-select-simple select--no-search">
+                                        <select name="Alcohol consumption">
+                                            <option disabled="disabled" selected="selected">Alcohol consumption</option>
+                                            <option>Yes</option>
+                                            <option>No</option>
+                                        </select>
+                                        <div class="select-dropdown"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <input class="input--style-1" type="text" placeholder="Routine medications" name="Routine Medications">
+                        </div>
+                        <p>
+                            <b>
+                                Presenting Complaints
+                            </b>
+                        </p>
+                        <br>
 
-                       </div>
-                       <div class="input-group">
-                           <input class="input--style-1" type="text" placeholder="Routine medications" name="Routine Medications">
-                       </div>
-                                      </form>
+                        <div class="input-group">
+                            <div class="rs-select2 js-select-simple select--no-search">
+                                <select name="Fever Present">
+                                    <option disabled="disabled" selected="selected">Fever Present</option>
+                                    <option>Yes</option>
+                                    <option>No</option>
+                                </select>
+                                <div class="select-dropdown"></div>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <div class="rs-select2 js-select-simple select--no-search">
+                                <select name="Headache">
+                                    <option disabled="disabled" selected="selected">Headache</option>
+                                    <option>Yes</option>
+                                    <option>No</option>
+                                </select>
+                                <div class="select-dropdown"></div>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <div class="rs-select2 js-select-simple select--no-search">
+                                <select name="Headache">
+                                    <option disabled="disabled" selected="selected">Headache</option>
+                                    <option>Yes</option>
+                                    <option>No</option>
+                                </select>
+                                <div class="select-dropdown"></div>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <div class="rs-select2 js-select-simple select--no-search">
+                                <select name="Rhinorrhea">
+                                    <option disabled="disabled" selected="selected">Rhinorrhea</option>
+                                    <option>Yes</option>
+                                    <option>No</option>
+                                </select>
+                                <div class="select-dropdown"></div>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <div class="rs-select2 js-select-simple select--no-search">
+                                <select name="Sore Throat">
+                                    <option disabled="disabled" selected="selected">Sore Throat</option>
+                                    <option>Yes</option>
+                                    <option>No</option>
+                                </select>
+                                <div class="select-dropdown"></div>
+                            </div>
+                        </div>
+
+                        <p>
+                            <b>
+                                Cough
+                            </b>
+                        </p>
+                        <br>
+                        <div class="input-group">
+                            <div class="rs-select2 js-select-simple select--no-search">
+                                <select name="Cough Present">
+                                    <option disabled="disabled" selected="selected">Cough Present</option>
+                                    <option>Yes</option>
+                                    <option>No</option>
+                                </select>
+                                <div class="select-dropdown"></div>
+                            </div>
+                        </div>
+                        <p>
+                            <b>
+                                Breathlessness
+                            </b>
+                        </p>
+                        <br>
+                        <div class="input-group">
+                            <div class="rs-select2 js-select-simple select--no-search">
+                                <select name="Breathlessness">
+                                    <option disabled="disabled" selected="selected">Breathlessness Present</option>
+                                    <option>Yes</option>
+                                    <option>No</option>
+                                </select>
+                                <div class="select-dropdown"></div>
+                            </div>
+                        </div>
+                        <p>
+                            <b>
+                                Diarrhea
+                            </b>
+                        </p>
+                        <br>
+
+                        <div class="input-group">
+                            <div class="rs-select2 js-select-simple select--no-search">
+                                <select name="Diarrhea">
+                                    <option disabled="disabled" selected="selected">Diarrhea Present</option>
+                                    <option>Yes</option>
+                                    <option>No</option>
+                                </select>
+                                <div class="select-dropdown"></div>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <div class="rs-select2 js-select-simple select--no-search">
+                                <select name="Abdominal Pain">
+                                    <option disabled="disabled" selected="selected">Abdominal Pain Present</option>
+                                    <option>Yes</option>
+                                    <option>No</option>
+                                </select>
+                                <div class="select-dropdown"></div>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <div class="rs-select2 js-select-simple select--no-search">
+                                <select name="Similar ilness amongst family members">
+                                    <option disabled="disabled" selected="selected">Similar ilness amongst family members Present</option>
+                                    <option>Yes</option>
+                                    <option>No</option>
+                                </select>
+                                <div class="select-dropdown"></div>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <div class="rs-select2 js-select-simple select--no-search">
+                                <select name="History of food consumption from outside">
+                                    <option disabled="disabled" selected="selected">History of food consumption from outside</option>
+                                    <option>Yes</option>
+                                    <option>No</option>
+                                </select>
+                                <div class="select-dropdown"></div>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <div class="rs-select2 js-select-simple select--no-search">
+                                <select name="Watery">
+                                    <option disabled="disabled" selected="selected">Watery</option>
+                                    <option>Yes</option>
+                                    <option>No</option>
+                                </select>
+                                <div class="select-dropdown"></div>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <div class="rs-select2 js-select-simple select--no-search">
+                                <select name="Bloody">
+                                    <option disabled="disabled" selected="selected">Bloody</option>
+                                    <option>Yes</option>
+                                    <option>No</option>
+                                </select>
+                                <div class="select-dropdown"></div>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <div class="rs-select2 js-select-simple select--no-search">
+                                <select name="Mucus">
+                                    <option disabled="disabled" selected="selected">Mucus in stools</option>
+                                    <option>Yes</option>
+                                    <option>No</option>
+                                </select>
+                                <div class="select-dropdown"></div>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <div class="rs-select2 js-select-simple select--no-search">
+                                <select name="Malaise">
+                                    <option disabled="disabled" selected="selected">Malaise</option>
+                                    <option>Yes</option>
+                                    <option>No</option>
+                                </select>
+                                <div class="select-dropdown"></div>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <div class="rs-select2 js-select-simple select--no-search">
+                                <select name="Myalgia">
+                                    <option disabled="disabled" selected="selected">Myalgia</option>
+                                    <option>Yes</option>
+                                    <option>No</option>
+                                </select>
+                                <div class="select-dropdown"></div>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <div class="rs-select2 js-select-simple select--no-search">
+                                <select name="Loss of Smell">
+                                    <option disabled="disabled" selected="selected">Loss of Smell</option>
+                                    <option>Yes</option>
+                                    <option>No</option>
+                                </select>
+                                <div class="select-dropdown"></div>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <div class="rs-select2 js-select-simple select--no-search">
+                                <select name="Loss of Taste">
+                                    <option disabled="disabled" selected="selected">Loss of Taste</option>
+                                    <option>Yes</option>
+                                    <option>No</option>
+                                </select>
+                                <div class="select-dropdown"></div>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <input class="input--style-1" type="text" placeholder="Other Symptoms" name="Name">
+                        </div>
+                        <div class="input-group">
+                            <input class="input--style-1" type="text" placeholder="Height (in cm)" name="Name">
+                        </div>
+                        <div class="input-group">
+                            <input class="input--style-1" type="text" placeholder="Weight (in kg)" name="Name">
+                        </div>
+                        <div class="input-group">
+                            <input class="input--style-1" type="text" placeholder="BMI" name="Name">
+                        </div>
+                        <p>
+                            <b>
+                                Vitals
+                            </b>
+                        </p>
+                        <br>
+                        <div class="input-group">
+                            <input class="input--style-1" type="text" placeholder="Temperature (in F)" name="Name">
+                        </div>
+                        <div class="input-group">
+                            <input class="input--style-1" type="text" placeholder="Pulse rate (/min)" name="Name">
+                        </div>
+                        <div class="input-group">
+                            <input class="input--style-1" type="text" placeholder="Blood pressure - Systolic (mmHg)" name="Name">
+                        </div>
+                        <div class="input-group">
+                            <input class="input--style-1" type="text" placeholder="Blood pressure - Diastolic (mmHg)" name="Name">
+                        </div>
+                        <div class="input-group">
+                            <div class="rs-select2 js-select-simple select--no-search">
+                                <select name="General Examination">
+                                    <option disabled="disabled" selected="selected">General Examination</option>
+                                    <option>Pallor</option>
+                                    <option>Icterus</option>
+                                    <option>Cyanosis</option>
+                                    <option>Clubbing</option>
+                                    <option>Pedal edema</option>
+                                    <option>Elevated JVP</option>
+                                    <option>Flaps</option>
+                                </select>
+                                <div class="select-dropdown"></div>
+                            </div>
+                        </div>
+                        <h3>
+                            <b>
+                                Basic Examination
+                            </b>
+                        </h2>
+                        <br>
+                        <p>
+                            <b>
+                                Respiratory
+                            </b>
+                        </p>
+                        <br>
+                        <div class="input-group">
+                            <div class="rs-select2 js-select-simple select--no-search">
+                                <select name="Air Entry">
+                                    <option disabled="disabled" selected="selected">Air Entry</option>
+                                    <option>Normal</option>
+                                    <option>Abnormal</option>
+                                </select>
+                                <div class="select-dropdown"></div>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <div class="rs-select2 js-select-simple select--no-search">
+                                <select name="Added Sound">
+                                    <option disabled="disabled" selected="selected">Added Sound</option>
+                                    <option>Yes</option>
+                                    <option>No</option>
+                                </select>
+                                <div class="select-dropdown"></div>
+                            </div>
+                        </div>
+
+
+
+
+
+                                    </form>
                                       <div class="p-t-20">
                                         <button class="btn btn--radius btn--green" type="submit" onclick='SubForm()'>Submit</button>
                                          </div>
