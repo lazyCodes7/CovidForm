@@ -6,7 +6,26 @@
   font-family: 'Quicksand', sans-serif;
 
 }
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 10px;
+}
+.radio-left{
+  width: auto;
+  float: right;
 
+}
+.label-left{
+  float:right;
+  padding: 1px;
+}
+.notnormal{
+  width: auto;
+
+}
+.align-right{
+}
 /* ==========================================================================
    #GRID
    ========================================================================== */
