@@ -23,8 +23,10 @@ table, th, td {
 .notnormal{
   width: auto;
 
+
 }
-.align-right{
+.hidden{
+  display: none;
 }
 /* ==========================================================================
    #GRID
@@ -313,7 +315,44 @@ input {
   margin-bottom: 30px;
   border-bottom: 2px solid #ccc;
 }
-
+#input-group-hidden{
+  position: relative;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #ccc;
+  display:none;
+}
+#input-group-hidden-travel{
+  position: relative;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #ccc;
+  display:none;
+}
+#input-group-hidden-morbidities{
+  position: relative;
+  display:none;
+}
+#input-group-hidden-fever{
+  position: relative;
+  display:none;
+}
+#input-group-hidden-headache{
+  position: relative;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #ccc;
+  display:none;
+}
+#input-group-hidden-rhinorrhea{
+  position: relative;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #ccc;
+  display:none;
+}
+#input-group-hidden-sore-throat{
+  position: relative;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #ccc;
+  display:none;
+}
 .input-icon {
   position: absolute;
   font-size: 18px;
